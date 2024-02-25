@@ -1,17 +1,18 @@
 package edu.iu.habahram.coffeeorder.model;
 
-public class Milk extends CondimentDecorator{
-    public Milk(Beverage beverage) {
+public class Whip extends CondimentDecorator{
+
+    public Whip(Beverage beverage) {
         this.beverage = beverage;
     }
 
     @Override
     public float cost() {
-        return  beverage.cost() + 0.40F;
+        return  beverage.cost() + 0.25F;
     }
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + ", Milk";
+        return beverage.getDescription() + ", Whip";
     }
 }
