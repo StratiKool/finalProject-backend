@@ -7,7 +7,7 @@ public class Mocha extends CondimentDecorator{
 
     @Override
     public float cost() {
-        return  beverage.cost() + 0.30F;
+        return  beverage.cost() + 0.3F;
     }
 
     @Override
