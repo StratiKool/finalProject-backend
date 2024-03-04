@@ -8,10 +8,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Random;
 
 @Repository
 public class OrderRepository {
+    private ArrayList<Integer> uniqueIds = new ArrayList<>();
     private static final String DATABASE_NAME = "db.txt";
     public Receipt add(OrderData order) throws Exception {
         Beverage beverage = null;
@@ -51,7 +53,15 @@ public class OrderRepository {
             }
         }
         Random random = new Random();
-        int id = random.nextInt(100);
+        int id = random.nextInt(99)+1;
+        uniqueIds.add(id);
+        for (int i = 0; i < uniqueIds.size() - 1; i++) {
+            if (uniqueIds.get(i) == id) {
+                    id = random.nextInt(99) + 1;
+                    uniqueIds.remove(i);
+                    uniqueIds.add(id);
+            }
+        }
         Path path = Paths.get(DATABASE_NAME);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path.toFile(), true))) {
             writer.write(id + "," + beverage.cost() + "," + beverage.getDescription() + System.lineSeparator());
