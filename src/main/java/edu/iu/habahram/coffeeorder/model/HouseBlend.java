@@ -4,7 +4,7 @@ public class HouseBlend extends Beverage{
 
         @Override
         public String getDescription() {
-            return "House Blend";
+            return "House Blend with ";
         }
         @Override
         public float cost() {

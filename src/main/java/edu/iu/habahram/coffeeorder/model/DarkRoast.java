@@ -4,7 +4,7 @@ public class DarkRoast extends Beverage{
 
     @Override
     public String getDescription() {
-        return "Dark roast";
+        return "Dark roast with ";
     }
     @Override
     public float cost() {

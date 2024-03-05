@@ -15,7 +15,6 @@ import java.util.Random;
 
 @Repository
 public class OrderRepository {
-    private ArrayList<Integer> uniqueIds = new ArrayList<>();
     private static final String DATABASE_NAME = "db.txt";
 
     public Receipt add(OrderData order) throws Exception {
@@ -57,14 +56,6 @@ public class OrderRepository {
         }
         Random random = new Random();
         int id = random.nextInt(99) + 1;
-        uniqueIds.add(id);
-        for (int i = 0; i < uniqueIds.size() - 1; i++) {
-            if (uniqueIds.get(i) == id) {
-                id = random.nextInt(99) + 1;
-                uniqueIds.remove(i);
-                uniqueIds.add(id);
-            }
-        }
         Path path = Paths.get(DATABASE_NAME);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path.toFile(), true))) {
             writer.write(id + ", " + beverage.cost() + ", " + beverage.getDescription() + System.lineSeparator());
@@ -90,6 +81,8 @@ public class OrderRepository {
             Receipt r = new Receipt(description, cost, id);
             receipts.add(r);
         }
+        System.out.println("Size of receipts in getLatest: ");
+        System.out.println(receipts.size());
         if(receipts.isEmpty()){
             return null;
         }

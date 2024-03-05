@@ -1,0 +1,32 @@
+99, 1.61, Espresso with ,Soy
+3, 1.59, Espresso with ,Whip
+73, 1.74, Espresso with ,Milk
+65, 1.6400001, Espresso with ,Mocha
+21, 2.26, Dark roast with ,Soy
+95, 2.24, Dark roast with ,Whip
+17, 2.39, Dark roast with ,Milk
+13, 2.29, Dark roast with ,Mocha
+34, 1.92, House Blend with ,Soy
+30, 1.9, House Blend with ,Whip
+64, 2.05, House Blend with ,Milk
+24, 1.95, House Blend with ,Mocha
+36, 1.55, Decaf with ,Soy
+31, 1.53, Decaf with ,Whip
+17, 1.68, Decaf with ,Milk
+69, 1.5799999, Decaf with ,Mocha
+50, 1.61, Espresso with ,Soy
+18, 1.59, Espresso with ,Whip
+33, 1.74, Espresso with ,Milk
+11, 1.6400001, Espresso with ,Mocha
+23, 2.26, Dark roast with ,Soy
+26, 2.24, Dark roast with ,Whip
+9, 2.39, Dark roast with ,Milk
+71, 2.29, Dark roast with ,Mocha
+94, 1.92, House Blend with ,Soy
+42, 1.9, House Blend with ,Whip
+83, 2.05, House Blend with ,Milk
+92, 1.95, House Blend with ,Mocha
+33, 1.55, Decaf with ,Soy
+41, 1.53, Decaf with ,Whip
+96, 1.68, Decaf with ,Milk
+56, 1.5799999, Decaf with ,Mocha
