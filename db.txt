@@ -30,3 +30,9 @@
 41, 1.53, Decaf with ,Whip
 96, 1.68, Decaf with ,Milk
 56, 1.5799999, Decaf with ,Mocha
+47, 3.1399999, Dark roast with ,Mocha,Mocha,Mocha,Whip
+28, 4.29, Dark roast with ,Mocha,Mocha,Mocha,Whip,Mocha,Mocha,Mocha,Whip
+87, 4.84, Dark roast with ,Mocha,Mocha,Mocha,Whip,Mocha,Mocha,Mocha,Whip,Mocha,Whip
+7, 2.8899999, Dark roast with ,Mocha,Mocha,Mocha
+59, 2.79, Dark roast with ,Whip,Whip,Mocha
+33, 3.1399999, Dark roast with ,Mocha,Mocha,Mocha,Whip

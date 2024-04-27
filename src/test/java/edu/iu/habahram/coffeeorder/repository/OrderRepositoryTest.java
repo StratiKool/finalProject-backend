@@ -1,12 +1,8 @@
 package edu.iu.habahram.coffeeorder.repository;
 
 import edu.iu.habahram.coffeeorder.model.OrderData;
-import edu.iu.habahram.coffeeorder.model.Receipt;
 import org.junit.jupiter.api.Test;
-import org.mockito.internal.matchers.Or;
 
-import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -17,7 +13,7 @@ class OrderRepositoryTest {
     private static final String DATABASE_NAME = "db.txt";
     @Test
     void add1() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Espresso", Arrays.asList("Soy"));
         orderRepository.add(orderData);
@@ -29,7 +25,7 @@ class OrderRepositoryTest {
 
     @Test
     void add2() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Espresso", Arrays.asList("Whip"));
         orderRepository.add(orderData);
@@ -41,7 +37,7 @@ class OrderRepositoryTest {
 
     @Test
     void add3() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Espresso", Arrays.asList("Milk"));
         orderRepository.add(orderData);
@@ -53,7 +49,7 @@ class OrderRepositoryTest {
 
     @Test
     void add4() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Espresso", Arrays.asList("Mocha"));
         orderRepository.add(orderData);
@@ -65,7 +61,7 @@ class OrderRepositoryTest {
 
     @Test
     void add5() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Dark Roast", Arrays.asList("Soy"));
         orderRepository.add(orderData);
@@ -77,7 +73,7 @@ class OrderRepositoryTest {
 
     @Test
     void add6() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Dark Roast", Arrays.asList("Whip"));
         orderRepository.add(orderData);
@@ -89,7 +85,7 @@ class OrderRepositoryTest {
 
     @Test
     void add7() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Dark roast", Arrays.asList("Milk"));
         orderRepository.add(orderData);
@@ -101,7 +97,7 @@ class OrderRepositoryTest {
 
     @Test
     void add8() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Dark Roast", Arrays.asList("Mocha"));
         orderRepository.add(orderData);
@@ -113,7 +109,7 @@ class OrderRepositoryTest {
 
     @Test
     void add9() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("House Blend", Arrays.asList("Soy"));
         orderRepository.add(orderData);
@@ -125,7 +121,7 @@ class OrderRepositoryTest {
 
     @Test
     void add10() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("House Blend", Arrays.asList("Whip"));
         orderRepository.add(orderData);
@@ -137,7 +133,7 @@ class OrderRepositoryTest {
 
     @Test
     void add11() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("House Blend", Arrays.asList("Milk"));
         orderRepository.add(orderData);
@@ -149,7 +145,7 @@ class OrderRepositoryTest {
 
     @Test
     void add12() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("House Blend", Arrays.asList("Mocha"));
         orderRepository.add(orderData);
@@ -161,7 +157,7 @@ class OrderRepositoryTest {
 
     @Test
     void add13() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Decaf", Arrays.asList("Soy"));
         orderRepository.add(orderData);
@@ -173,7 +169,7 @@ class OrderRepositoryTest {
 
     @Test
     void add14() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Decaf", Arrays.asList("Whip"));
         orderRepository.add(orderData);
@@ -185,7 +181,7 @@ class OrderRepositoryTest {
 
     @Test
     void add15() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Decaf", Arrays.asList("Milk"));
         orderRepository.add(orderData);
@@ -197,7 +193,7 @@ class OrderRepositoryTest {
 
     @Test
     void add16() throws Exception {
-        OrderRepository orderRepository = new OrderRepository();
+        OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Decaf", Arrays.asList("Mocha"));
         orderRepository.add(orderData);
