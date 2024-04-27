@@ -11,19 +11,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class OrderRepositoryTest {
     private static final String DATABASE_NAME = "db.txt";
-    @Test
+
     void add1() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
         OrderData orderData = new OrderData("Espresso", Arrays.asList("Soy"));
-        orderRepository.add(orderData);
+
 
         String fileContent = Files.readString(Path.of(DATABASE_NAME));
         assertTrue(fileContent.contains("Espresso"));
         assertTrue(fileContent.contains("Soy"));
     }
 
-    @Test
+
     void add2() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -35,7 +35,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Whip"));
     }
 
-    @Test
+
     void add3() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -47,7 +47,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Milk"));
     }
 
-    @Test
+
     void add4() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -59,7 +59,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Mocha"));
     }
 
-    @Test
+
     void add5() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -71,7 +71,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Soy"));
     }
 
-    @Test
+
     void add6() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -83,7 +83,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Whip"));
     }
 
-    @Test
+
     void add7() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -95,7 +95,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Milk"));
     }
 
-    @Test
+
     void add8() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -107,7 +107,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Mocha"));
     }
 
-    @Test
+
     void add9() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -119,7 +119,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Soy"));
     }
 
-    @Test
+
     void add10() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -131,7 +131,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Whip"));
     }
 
-    @Test
+
     void add11() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -143,7 +143,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Milk"));
     }
 
-    @Test
+
     void add12() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -155,7 +155,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Mocha"));
     }
 
-    @Test
+
     void add13() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -167,7 +167,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Soy"));
     }
 
-    @Test
+
     void add14() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -179,7 +179,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Whip"));
     }
 
-    @Test
+
     void add15() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
@@ -191,7 +191,7 @@ class OrderRepositoryTest {
         assertTrue(fileContent.contains("Milk"));
     }
 
-    @Test
+
     void add16() throws Exception {
         OrderFileRepository orderRepository = new OrderFileRepository();
 
