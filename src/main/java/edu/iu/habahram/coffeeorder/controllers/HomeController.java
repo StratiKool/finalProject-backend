@@ -10,6 +10,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String greetings() {
-        return "Welcome to the coffee order system!";
+        return "Welcome to the flower shop!";
     }
 }

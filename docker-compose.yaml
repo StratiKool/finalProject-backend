@@ -1,9 +1,9 @@
 services:
-  coffee-order:
+  flower-shop:
     image: postgres:alpine
-    container_name: coffee-order
+    container_name: flower-shop
     ports:
-      - "6003:5432"
+      - "6004:5432"
     environment:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: password

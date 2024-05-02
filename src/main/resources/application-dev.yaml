@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:6003/spring-2024
+    url: jdbc:postgresql://localhost:6004/spring-2024
     username: postgres
     password: password
 

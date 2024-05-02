@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(schema = "coffee")
+@Table(schema = "flowers")
 public final class Customer {
     @Id
     private String username;

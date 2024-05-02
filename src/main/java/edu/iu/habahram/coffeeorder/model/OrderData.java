@@ -1,6 +1,4 @@
 package edu.iu.habahram.coffeeorder.model;
 
-import java.util.List;
-
-public record OrderData(String beverage, List<String> condiments) {
+public record OrderData(int id, String name, float cost) {
 }
